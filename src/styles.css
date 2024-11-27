@@ -1,0 +1,199 @@
+@media screen and (min-width: 800px) {
+  text-align: center;
+  background-size: 100%;
+  background-repeat: repeat-y;
+  box-sizing: border-box;
+}
+
+html {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../Assets/Images/sakurawallpaper_lessopacity.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  max-width: 60rem;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 20px;
+  color: #b84c65;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 20px;
+  line-height: 20px;
+  color: #b84c65;
+  text-decoration: none;
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: rgba(252, 192, 197, 0.562);
+  border: 1px solid;
+  padding: 10px;
+}
+
+h3,
+h4 {
+  color: #a07583;
+  border-color: #fcc0c5da;
+  text-align: center;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+p {
+  font-size: 18px;
+  margin-left: 200px;
+  margin-right: 200px;
+  line-height: 25px;
+  color: #b84c65;
+  background-color: rgb(252, 192, 197);
+  border: 1px solid;
+  padding: 10px;
+}
+
+a:link {
+  color: #b84c65;
+  text-decoration: underline;
+  flex: 1;
+  background-color: #fcc0c5;
+  padding: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #b84c65;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  background-color: #fcc0c5;
+}
+
+a:active {
+  color: white;
+  background-color: #a07583;
+  text-decoration: underline;
+}
+
+footer {
+  color: #b84c65;
+  text-align: center;
+  position: static;
+  margin-top: 40px;
+}
+
+li {
+  padding: 14px;
+  border-top: 20px;
+  display: inline;
+  text-align: center;
+  background-color: #fcc0c5;
+  border: 1px solid;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 200px;
+  height: auto;
+  border: 20px solid #fcc0c5;
+  border-width: 20px;
+}
+img.main {
+  width: 70% !important;
+
+  border: 100px !important;
+}
+
+.pdf {
+  width: 80%;
+  aspect-ratio: 4 / 3;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.linksboven,
+.rechtsonder {
+  grid-column: 2/ 3;
+  font-size: 20px;
+  color: #b84c65;
+  background-color: #fcc0c5da;
+  border: 1px solid #b84c65 !important;
+  padding: 20px;
+  text-align: left !important;
+  height: auto;
+  width: 800px;
+}
+
+.rechtsboven {
+  grid-column: 3;
+  grid-row: 1;
+  height: fit-content;
+}
+
+.linksonder {
+  grid-column: 1;
+  grid-row: 2;
+  height: fit-content;
+}
+
+.grid-item {
+  margin-top: 20px;
+  text-align: center;
+  border-color: #a07583;
+  color: #a07583;
+  font-size: 1.2em;
+}
+input[type="name"] {
+  box-sizing: border-box;
+  border: 1px solid #b84c65;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: white;
+}
+
+input[type="email"] {
+  box-sizing: border-box;
+  border: 1px solid #b84c65;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  background-color: white;
+}
+input[type="message"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b84c65;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  resize: vertical;
+  background-color: white;
+}
+
+button[type="submit"] {
+  color: black;
+  text-decoration: none;
+  background-color: #fcc0c5;
+  padding: 12px 20px;
+  border: 1px solid #b84c65;
+  border-radius: 4px;
+  cursor: pointer;
+}
