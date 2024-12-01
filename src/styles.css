@@ -1,9 +1,38 @@
-@media screen and (min-width: 800px) {
-  text-align: center;
-  background-size: 100%;
-  background-repeat: repeat-y;
-  box-sizing: border-box;
+.parent {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+  height: 100vh;
 }
+
+.grid-nav {
+  grid-area: 1 / 1 / 2 / 2;
+  place-items: center;
+}
+
+.div2 {
+  grid-area: 2 / 1 / 3 / 2;
+  place-items: center
+}
+
+.div3 {
+  grid-area: 3 / 1 / 4 / 2;
+  place-items: center
+}
+
+.div4 {
+  grid-area: 4 / 1 / 5 / 2;
+  place-items: center
+}
+
+.grid-footer {
+  grid-area: 5 / 1 / 6 / 2;
+  place-items: center
+}
+
 
 html {
   text-align: center;
@@ -11,7 +40,7 @@ html {
   background-image: url("../Assets/Images/sakurawallpaper_lessopacity.png");
   background-size: 100%;
   background-repeat: repeat-y;
-  box-sizing: border-box;
+  box-sizing: 100%;
 }
 
 body {
@@ -27,13 +56,12 @@ h1 {
   padding-bottom: 10px;
   text-decoration: underline;
 }
+
 h2 {
   font-size: 20px;
   line-height: 20px;
   color: #b84c65;
   text-decoration: none;
-  margin-left: 200px;
-  margin-right: 200px;
   background-color: rgba(252, 192, 197, 0.562);
   border: 1px solid;
   padding: 10px;
@@ -47,10 +75,9 @@ h4 {
   text-decoration: underline;
   padding-bottom: 10px;
 }
+
 p {
   font-size: 18px;
-  margin-left: 200px;
-  margin-right: 200px;
   line-height: 25px;
   color: #b84c65;
   background-color: rgb(252, 192, 197);
@@ -110,6 +137,7 @@ img {
   border: 20px solid #fcc0c5;
   border-width: 20px;
 }
+
 img.main {
   width: 70% !important;
 
@@ -159,6 +187,7 @@ img.main {
   color: #a07583;
   font-size: 1.2em;
 }
+
 input[type="name"] {
   box-sizing: border-box;
   border: 1px solid #b84c65;
@@ -174,6 +203,7 @@ input[type="email"] {
   margin-bottom: 6px;
   background-color: white;
 }
+
 input[type="message"],
 select,
 textarea {
