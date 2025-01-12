@@ -1,56 +1,20 @@
-.parent {
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 20px;
-  height: 100vh;
-}
-
-.grid-nav {
-  grid-area: 1 / 1 / 2 / 2;
-  place-items: center;
-}
-
-.div2 {
-  grid-area: 2 / 1 / 3 / 2;
-  place-items: center
-}
-
-.div3 {
-  grid-area: 3 / 1 / 4 / 2;
-  place-items: center
-}
-
-.div4 {
-  grid-area: 4 / 1 / 5 / 2;
-  place-items: center
-}
-
-.grid-footer {
-  grid-area: 5 / 1 / 6 / 2;
-  place-items: center
-}
-
 
 html {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("../Assets/Images/sakurawallpaper_lessopacity.png");
-  background-size: 100%;
-  background-repeat: repeat-y;
-  box-sizing: 100%;
+  box-sizing: border-box; /
 }
 
 body {
-  text-align: center;
-
+  background-image: url("/User-Interfaces-Portfolio/Assets/Images/sakurawallpaper_lessopacity.png");
+  background-size: 100%;
+  background-repeat: repeat-y;
+  margin: 0;
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 20px;
+  font-size: 24px; 
+  line-height: 1.5;
   color: #b84c65;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -58,8 +22,8 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 1.5;
   color: #b84c65;
   text-decoration: none;
   background-color: rgba(252, 192, 197, 0.562);
@@ -77,15 +41,17 @@ h4 {
 }
 
 p {
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px; 
+  line-height: 1.6;
   color: #b84c65;
   background-color: rgb(252, 192, 197);
   border: 1px solid;
   padding: 10px;
+  text-align: center;
 }
 
-a:link {
+a:link,
+a:visited {
   color: #b84c65;
   text-decoration: underline;
   flex: 1;
@@ -95,22 +61,10 @@ a:link {
   text-decoration: underline;
 }
 
-a:visited {
-  color: #b84c65;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ffffff;
-  text-decoration: underline;
-  background-color: #fcc0c5;
-}
-
+a:hover,
 a:active {
-  color: white;
-  background-color: #a07583;
-  text-decoration: underline;
+  color: #ffffff !important;
+  background-color: #fcc0c5;
 }
 
 footer {
@@ -123,15 +77,22 @@ footer {
 li {
   padding: 14px;
   border-top: 20px;
-  display: inline;
+  display: inline-block;
   text-align: center;
   background-color: #fcc0c5;
   border: 1px solid;
 }
 
+label {
+  font-size: 16px; 
+  line-height: 1.5;
+  color: #b84c65;
+  text-decoration: none;
+  padding: 10px;
+}
 
-img.main {
-  width: % !important;
+img {
+  width: 100% !important;
 }
 
 .pdf {
@@ -139,21 +100,15 @@ img.main {
   aspect-ratio: 4 / 3;
 }
 
-
-input[type="name"] {
-  box-sizing: border-box;
-  border: 1px solid #b84c65;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  background-color: white;
-}
-
+/* Form Inputs */
+input[type="text"],
 input[type="email"] {
   box-sizing: border-box;
   border: 1px solid #b84c65;
   margin-top: 6px;
   margin-bottom: 6px;
   background-color: white;
+  width: 100%;
 }
 
 input[type="message"],
@@ -170,12 +125,113 @@ textarea {
   background-color: white;
 }
 
+/* Submit button */
 button[type="submit"] {
-  color: black;
-  text-decoration: none;
+  color: #b84c65;
+  text-decoration: underline;
   background-color: #fcc0c5;
   padding: 12px 20px;
   border: 1px solid #b84c65;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  color: white;
+}
+
+/* Contact Form Container */
+div.contact-form {
+  background-color: #fcc0c565;
+  border-radius: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+/* Media Queries: Larger screens */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  li {
+    padding: 14px;
+    margin: 5px;
+    display: inline-block;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="message"],
+  select,
+  textarea {
+    width: 100%;
+  }
+
+  button[type="submit"] {
+    width: auto;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+
+
+  li {
+    display: inline-block;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+
 }

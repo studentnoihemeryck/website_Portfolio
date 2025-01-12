@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-
 <html lang="nl">
 
 <head>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>Mijn portfolio</title>
+  <title>Mijn Portfolio</title>
 
   <link rel="icon" type="image/x-icon" href="Assets\Images\sakuraflower.png" />
-
-  <link rel="stylesheet" href="src\styles.css" />
+  <link rel="stylesheet" href="\User-Interfaces-Portfolio\src\styles.css" />
+  <link rel="stylesheet" href="/User-Interfaces-Portfolio/src/css/bootstrap.min.css" />
 </head>
 
 <body>
-  <div class="parent">
-    <div class="grid-nav">
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Navigation Bar -->
       <nav>
-        <ul>
-          <a href="Overmij.html">Over mij</a href>
-          <a href="Interesses.html">Interesses</a>
-          <a href="NoiHemeryck_CV_nl_page-0001.html">CV</a>
-          <a href="projecten.html">Projecten</a>
-          <a href="Werkplekleren.html">Werkplekleren</a>
-          <a href="index.html">Home</a>
-        </ul>
+        <div class="grid-nav my-3">
+          <nav>
+            <ul>
+              <a href="Overmij.html">Over mij</a href>
+              <a href="Interesses.html">Interesses</a>
+              <a href="NoiHemeryck_CV_nl_page-0001.html">CV</a>
+              <a href="projecten.html">Projecten</a>
+              <a href="Werkplekleren.html">Werkplekleren</a>
+              <a href="index.html">Home</a>
+            </ul>
+          </nav>
+        </div>
       </nav>
     </div>
-    <div class="div2"> </div>
-    <div class="div3"> </div>
-    <div class="div4"> </div>
-    <div class="grid-footer">
-      <footer>
-        <li>Tel: 0486636188 </li>
-        <li>Email: hemerycknoi@gmail.com </li>
-        <li><a href="Contact.html"> Contact</a></li>
-      </footer>
-    </div>
-  </div>
 
+    <img src="/User-Interfaces-Portfolio\Assets\Images\ZenoNoi.JPG" class="img-fluid pt-5 w-50" alt="afbeeldingnoizeno">
+
+    <!-- Footer Section -->
+    <footer class="py-4">
+      <div class="fixed-bottom m-3" <ul class="list-unstyled">
+        <li>Tel: 0486636188</li>
+        <li>Email: hemerycknoi@gmail.com</li>
+        <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
 
 
 </body>

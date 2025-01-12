@@ -1,58 +1,68 @@
 <!DOCTYPE html>
-
 <html lang="nl">
-  <head>
 
-
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Contact</title>
 
-    <link rel="icon" type="image/x-icon" href="Assets\Images\sakuraflower.png" />
+    <link rel="icon" type="image/x-icon" href="User-Interfaces-Portfolio\Assets\Images\sakuraflower.png" />
+    <link rel="stylesheet" href="/User-Interfaces-Portfolio\src\styles.css" />
+    <link rel="stylesheet" href="/User-Interfaces-Portfolio/src/css/bootstrap.min.css" />
+</head>
 
-    <link rel="stylesheet" href="src\styles.css" />
-  </head>
-
-  <body>
-
+<body>
+    <!-- Navbar -->
     <nav>
-    <ul>
-    <a href="Overmij.html">Over mij</a href>
-    <a href="Interesses.html">Interesses</a>
-    <a href="NoiHemeryck_CV_nl_page-0001.html">CV</a>
-    <a href="projecten.html">Projecten</a>
-    <a href="Werkplekleren.html">Werkplekleren</a>
-    <a href="index.html">Home</a>
-  </ul>
-</nav>
-    <main>
-          
+        <div class="grid-nav my-3">
+            <nav>
+                <ul>
+                    <a href="Overmij.html">Over mij</a href>
+                    <a href="Interesses.html">Interesses</a>
+                    <a href="NoiHemeryck_CV_nl_page-0001.html">CV</a>
+                    <a href="projecten.html">Projecten</a>
+                    <a href="Werkplekleren.html">Werkplekleren</a>
+                    <a href="index.html">Home</a>
+                </ul>
+            </nav>
+        </div>
+    </nav>
 
-              <section class="content-section contact-section" id="contact">
-                <h2>Neem Contact Op</h2>
-                <form action="Assets/mailform.php" method="POST" class="contact-form">
-                  <label for="name">Naam:</label>
-                  <input type="text" id="name" name="name" required />
-          
-                  <label for="email">E-mail:</label>
-                  <input type="email" id="email" name="email" required />
-          
-                  <label for="message">Bericht:</label>
-                  <textarea id="message" name="message" rows="6" required></textarea>
-          
-                  <button type="submit">Verstuur</button>
-                </form>
-              </section>
-          
-          
-          <footer>
-              <li>Tel: 0486636188 </li>
-              <li>Email: hemerycknoi@gmail.com </li> 
-              <li><a href="Contact.html"> Contact</a></li>
-          </footer>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="contact-form">
+            <h1 class="text-center">Neem contact op</h1>
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Naam">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email adres">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Onderwerp">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Schrijf je bericht"></textarea>
+                </div>
+                <button type="submit" class="btn-block my-4">Verzend</button>
+            </form>
+        </div>
+    </div>
 
-          
-    </main>
-  </body>
+    <footer class="py-4">
+        <div class="fixed-bottom m-3" <ul class="list-unstyled">
+            <li>Tel: 0486636188</li>
+            <li>Email: hemerycknoi@gmail.com</li>
+            <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
 </html>
