@@ -45,7 +45,7 @@ html {
 
 body {
   text-align: center;
-  max-width: 60rem;
+
 }
 
 h1 {
@@ -129,19 +129,9 @@ li {
   border: 1px solid;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  width: 200px;
-  height: auto;
-  border: 20px solid #fcc0c5;
-  border-width: 20px;
-}
 
 img.main {
-  width: 70% !important;
-
-  border: 100px !important;
+  width: % !important;
 }
 
 .pdf {
@@ -149,44 +139,6 @@ img.main {
   aspect-ratio: 4 / 3;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-.linksboven,
-.rechtsonder {
-  grid-column: 2/ 3;
-  font-size: 20px;
-  color: #b84c65;
-  background-color: #fcc0c5da;
-  border: 1px solid #b84c65 !important;
-  padding: 20px;
-  text-align: left !important;
-  height: auto;
-  width: 800px;
-}
-
-.rechtsboven {
-  grid-column: 3;
-  grid-row: 1;
-  height: fit-content;
-}
-
-.linksonder {
-  grid-column: 1;
-  grid-row: 2;
-  height: fit-content;
-}
-
-.grid-item {
-  margin-top: 20px;
-  text-align: center;
-  border-color: #a07583;
-  color: #a07583;
-  font-size: 1.2em;
-}
 
 input[type="name"] {
   box-sizing: border-box;
