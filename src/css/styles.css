@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-image: url("/User-Interfaces-Portfolio/Assets/Images/sakurawallpaper_lessopacity.png");
+  background-image: url("Assets\Images\sakurawallpaper_lessopacity.png");
   background-size: 100%;
   background-repeat: repeat-y;
   margin: 0;
