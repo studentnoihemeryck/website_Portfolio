@@ -1,8 +1,8 @@
-
+/* Global styles */
 html {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box; /
+  box-sizing: border-box;
 }
 
 body {
@@ -12,8 +12,12 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
 h1 {
-  font-size: 24px; 
+  font-size: 24px;
   line-height: 1.5;
   color: #b84c65;
   padding-top: 10px;
@@ -41,7 +45,7 @@ h4 {
 }
 
 p {
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 1.6;
   color: #b84c65;
   background-color: rgb(252, 192, 197);
@@ -58,7 +62,6 @@ a:visited {
   background-color: #fcc0c5;
   padding: 10px;
   text-align: center;
-  text-decoration: underline;
 }
 
 a:hover,
@@ -84,7 +87,7 @@ li {
 }
 
 label {
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 1.5;
   color: #b84c65;
   text-decoration: none;
@@ -150,7 +153,45 @@ div.contact-form {
 }
 
 
-@media (min-width: 576px) {
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  li {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contact-form {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="message"],
+  select,
+  textarea {
+    font-size: 14px; /* Smaller font size for form inputs */
+  }
+
+  button[type="submit"] {
+    padding: 12px;
+    font-size: 14px; /* Smaller font for buttons */
+  }
+}
+
+
+/* Media Queries: Larger screens (Tablet upwards) */
+@media (min-width: 480px) {
   h1 {
     font-size: 30px;
   }
@@ -196,8 +237,6 @@ div.contact-form {
     font-size: 20px;
   }
 
-
-
   li {
     display: inline-block;
     margin: 5px;
@@ -217,7 +256,9 @@ div.contact-form {
     font-size: 22px;
   }
 
-
+  li {
+    padding: 14px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -233,5 +274,7 @@ div.contact-form {
     font-size: 24px;
   }
 
-
+  li {
+    padding: 18px;
+  }
 }
