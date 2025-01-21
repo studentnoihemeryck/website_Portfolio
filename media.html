@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="images\climbingemoji.png" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="navbar-brand">Magnus Midtbø</h1>
+        <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+          &#9776; <!-- hamburger icon -->
+        </button>
+        <div class="navbar-menu" id="navbar-menu">
+          <ul class="navbar-nav">
+            <li><a href="https://noihemeryck.be/" class="nav-link">Terug naar Portfolio</a></li>
+            <li><a href="index2.html" class="nav-link">Home</a></li>
+            <li><a href="geschiedenis.html" class="nav-link">Geschiedenis</a></li>
+            <li><a href="media.html" class="nav-link">Media Carrière</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="column">
+        <h1> <a href="https://www.youtube.com/@magmidt" class="link">YouTube</a></h1>
+        <p>Midtbø heeft een gelijknamig YouTube-kanaal, dat vanaf januari 2025 meer dan 2,5 miljoen abonnees heeft.
+
+          In 2013 nam Magnus Midtbø deel aan een Duits tv-programma Der Deutsche Meister (de Duitse kampioen) als
+          internationale deelnemer aan de uitdaging Reckstangenklettern (zalmladder). Midtbø versloeg de Duitse
+          deelnemer.
+
+          In januari 2020 vertegenwoordigde Magnus Midtbø Team Europa in American Ninja Warrior: USA vs. The World.
+
+          In 2022 uploadde Magnus een van zijn meest virale video's waarin hij zijn ervaring met free solo-klimmen met
+          Alex Honnold documenteerde.</p>
+        </p>
+        <img src="images\youtubescreenshot.png" class="image responsive" alt="youtubescreenshot">
+      </div>
+
+      <div class="column">
+        <h1> <a href="https://rungne.com/" class="link">Rungne</a></h1>
+        <p>In 2019 richtte Magnus <strong>Rungne Apparel</strong> op. Rungne brengt de Noorse kliminnovatie naar het
+          dagelijks leven. Van hun baanbrekende
+          Rungne krijt en MagDust formules tot hun veelzijdige kledinglijn,
+          elk product belichaamt de toewijding van het merk aan prestaties en stijl.
+        </p>
+        <img src="images\Screenshot 2025-01-17 174041.png" class="image responsive" alt="onlineshop">
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="https://linkedin.com/noihemeryck">LinkedIn</a></li>
+      <li><a href="https://github.com/studentnoihemeryck">GitHub</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // JavaScript for toggling the navbar menu
+    const navbarToggler = document.getElementById("navbar-toggler");
+    const navbarMenu = document.getElementById("navbar-menu");
+
+    navbarToggler.addEventListener("click", () => {
+      navbarMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

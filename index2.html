@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="images\climbingemoji.png" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <h1 class="navbar-brand">Magnus Midtbø</h1>
+        <button class="navbar-toggler" id="navbar-toggler" aria-label="Toggle navigation">
+          &#9776; <!-- hamburger icon -->
+        </button>
+        <div class="navbar-menu" id="navbar-menu">
+          <ul class="navbar-nav">
+            <li><a href="https://noihemeryck.be/" class="nav-link">Terug naar Portfolio</a></li>
+            <li><a href="index2.html" class="nav-link">Home</a></li>
+            <li><a href="geschiedenis.html" class="nav-link">Geschiedenis</a></li>
+            <li><a href="media.html" class="nav-link">Media Carrière</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+   <div class="container">
+    <h1>Wie is Magnus Midtbø?</h1>
+    <p>Magnus Rogan Midtbø, geboren op 18 september 1988, is een Noorse klimmer die aan verschillende competities heeft meegedaan in de discipline boulderen, sportklimmen en rotsklimmen.</p>
+    <p>Hij is intussen gestopt met competitie klimmen maar heeft een YouTube kanaal waar hij klim tips geeft, zijn vrienden
+        uitnodigt om te gaan klimmen, of uitdagingen doet. </p>
+    <img src="images\Magnusboulder.png" class="responsive" alt="magnusboulder">
+</div>
+
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="https://linkedin.com/noihemeryck">LinkedIn</a></li>
+      <li><a href="https://github.com/studentnoihemeryck">GitHub</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    // JavaScript for toggling the navbar menu
+    const navbarToggler = document.getElementById("navbar-toggler");
+    const navbarMenu = document.getElementById("navbar-menu");
+
+    navbarToggler.addEventListener("click", () => {
+      navbarMenu.classList.toggle("active");
+    });
+  </script>
+</body>
+
+</html>

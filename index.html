@@ -1,53 +1,126 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Mijn Portfolio</title>
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
   <link rel="icon" type="image/x-icon" href="Assets\Images\sakuraflower.png" />
-  <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
-  <link rel="stylesheet" type="text/css"href="src/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="src\styles.css" />
+
+
+  <title>Home</title>
 </head>
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Navigation Bar -->
-      <nav>
-        <div class="grid-nav my-3">
-          <nav>
-            <ul>
-              <a href="Overmij.html">Over mij</a href>
-              <a href="Interesses.html">Interesses</a>
-              <a href="NoiHemeryck_CV_nl_page-0001.html">CV</a>
-              <a href="projecten.html">Projecten</a>
-              <a href="Werkplekleren.html">Werkplekleren</a>
-              <a href="index.html">Home</a>
+  <nav class="navbar navbar-expand-md ">
+    <div class="container-fluid">
+      <h1 class="navbar-brand">Mijn Portfolio</h1>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-md-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="OverMij.html">Over Mij</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Meer informatie
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Interesses.html">Interesses</a></li>
+              <li><a class="dropdown-item" href="CV.html">CV</a></li>
+              <li><a class="dropdown-item" href="Projecten.html">Projecten</a></li>
+              <li><a class="dropdown-item" href="Werkplekleren.html">Werkplekleren</a></li>
             </ul>
-          </nav>
-        </div>
-      </nav>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex ms-md-5 me-md-3" role="search">
+          <input class="form-control me-2 me-md-3" type="search" placeholder="Search" aria-label="Search" />
+          <span class=" border border-dark rounded">
+            <button class="btn " type="submit">Search</button>
+          </span>
+        </form>
+      </div>
     </div>
+  </nav>
+
+  <!--main-->
+  <main class="flex-column min-vh-100">
+    <h1 class="text">Welkom</h1>
+
+    <!-- Carousel -->
+    <div class="container mh-60 my-2 my-md-3 my-xl-5">
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Assets\Images\ZenoNoi.JPG" alt="Zeno and Noi" class="img-fluid rounded">
+          </div>
+          <div class="carousel-item">
+            <img src="Assets\Images\Hondjes.png" alt="Dogs" class="img-fluid rounded"style="width: 50%">
+          </div>
+          <div class="carousel-item">
+            <img src="Assets\Images\NoiHair.png" alt="Hair Noi" class="img-fluid rounded"style="width: 40%">
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn btn-secondary"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon btn btn-secondary"></span>
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!--footer-->
+
+  <div class="container">
+    <footer class="mt-auto py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+
+      </ul>
+      <ul class="nav-item"><a href="https://be.linkedin.com/in/noihemeryck" class="nav-link px-2 text-body">LinkedIn</a>
+      </ul>
+      <ul class="nav-item"><a href="https://github.com/studentnoihemeryck" class="nav-link px-2 text-body">Github</a>
+      </ul>
+    </footer>
   </div>
 
-
-
-    <!-- Footer Section -->
-    <footer class="py-4">
-      <div class="fixed-bottom m-3" 
-      <ul class="list-unstyled">
-        <li>Tel: 0486636188</li>
-        <li>Email: hemerycknoi@gmail.com</li>
-        <li><a href="Contact.html">Contact</a></li>
-        </ul>
-
-    </footer>
-
-
 </body>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+  <script integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    <script type="text/javascript" src="Scripts/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
 
 </html>
